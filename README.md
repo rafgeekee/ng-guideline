@@ -1,24 +1,24 @@
-# Stella Angular and JavaScript Style Guide
+# Angular Guideline
 
 ## Purpose
-The purpose of this is to set provide a rough guide for JavaScript and Angular syntax, conventions, and structuring. To support the building of the Stella Application. The main ideology is to set a style of coding that provides a capable foundation to improve maintainability, readability and performant code.
+The purpose of this is to set provide a rough guide for JavaScript and Angular syntax, conventions, and structuring. To support the building of the Angular Applications. The main ideology is to set a style of coding that provides a capable foundation to improve maintainability, readability and performant code.
 
 ## Credit and amendments
 Never work in a vacuum. If you find any other resource or have any questions about any of this guide; please speak up - so we can improve the guidelines and maintain a robust codebase.
 
-This guide is based on https://github.com/johnpapa/angular-styleguide, it has been reduced to the core aspects to the structure of the project and its files. For more information on parts of the guide please read the original style guide as its more comprehensive. The original style guide also provides information on further best practices for development with angular. Such as Automation and generators.
+This guide is based on https://github.com/johnpapa/angular-styleguide, it has been reduced to the core aspects to the structure of the project and its files. For more information on parts of the guide please read the original guideline as its more comprehensive. The original guideline also provides information on further best practices for development with angular. Such as Automation and generators.
 
 ## Style codes
-* *[Style [Y{number}](#style-y001)]*: are from the original [Angular Style Guide](https://github.com/johnpapa/angular-styleguide).
-* *[Style [S{number}](#style-s001)]*: are Styles formatted by Sainsbury's Entertainment, based on our time spent with angular.
+* *[Style [Y{number}](#style-y001)]*: are from the original [Angular Guidelines](https://github.com/johnpapa/angular-styleguide).
+* *[Style [S{number}](#style-s001)]*: are Styles formatted by Sainsbury's, based on our time spent with angular.
 
 ## Notes
-This Style Guide is not absolute. It should be used as a means of a tool and a guide to help build better applications, there may be instances where some Styles do not fit into the format of a project.
+This guideline is not absolute. It should be used as a means of a tool and a guide to help build better applications, there may be instances where some Styles do not fit into the format of a project.
 
-This Style Guide is still in development. It will be improved upon over time, as we learn and discover the force.
+This guideline is still in development. It will be improved upon over time, as we learn and discover the force.
 
 ## Table of Contents
-  1. [JavaScript Style Guide](#javascript-style-guide)
+  1. [JavaScript Guidelines](#javascript-guidelines)
   1. [Use of plugins and libraries](#use-of-plugins-and-libraries)
   1. [Application Structure LIFT Principle](#application-structure-lift-principle)
   1. [Naming](#naming)
@@ -33,10 +33,10 @@ This Style Guide is still in development. It will be improved upon over time, as
   1. [Constants](#constants)
   1. [Routing](#routing)
 
-## JavaScript Style Guide
+## JavaScript Guidelines
 To provide a better code base we will be using [Babel](https://babeljs.io/), this is a ES6 to ES5 compiler. It creates a better code base with stronger structure to code. It has some limitations to what can be converted to ES5 so please take care and fully study babel's guides to understand what can not be easily compiled.
 
-To accompany this guide, it is highly recommended to fully read the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript). It provides great insight into improving JavaScript code to make it more maintainable and readable.
+To accompany this guide, it is highly recommended to fully read the [Airbnb JavaScript Guidelines](https://github.com/airbnb/javascript). It provides great insight into improving JavaScript code to make it more maintainable and readable.
 
 ## Use of plugins and libraries
 When deciding to use and libraries or plugins please consider the use of them carefully, evaluate it's benefits and negatives and the overhead.
