@@ -28,6 +28,7 @@ This guideline is still in development. It will be improved upon over time, as w
   1. [Filters](#controllers)
   1. [Controllers](#controllers)
   1. [Directives](#directives)
+  1. [One Time Binding](#one-time-binding)
   1. [Startup Logic](#startup-logic)
   1. [Angular $ Wrapper Services](#angular--wrapper-services)
   1. [Constants](#constants)
@@ -837,8 +838,24 @@ Before using a library please consult others to get there opinions and get it si
 
 **[Back to top](#table-of-contents)**
 
-## Startup Logic
+## One Time Binding
+###### [Style [S011](#style-S011)]
 
+One time binding can leverage great performance results. In simple form a one time bind de-registers the $watch once it is stable (after the first digest-cycle). This technique is great to reduce complexity in an applications watch and digest cycles to improve an applications responsiveness. For more information see: https://docs.angularjs.org/guide/expression
+
+```html
+  <p id="one-time-binding-example">One time binding: {{::name}}</p>
+  <p id="normal-binding-example">Normal binding: {{name}}</p>
+```
+
+```html
+  <p id="one-time-binding-repeat-example" ng-repeat="name in ::names">One time binding: {{name}}</p>
+  <p id="normal-binding-repeat-example" ng-repeat="name in ::names">Normal binding: {{name}}</p>
+```
+
+**[Back to top](#table-of-contents)**
+
+## Startup Logic
 ### Configuration
 ###### [Style [Y170](#style-y170)]
 
