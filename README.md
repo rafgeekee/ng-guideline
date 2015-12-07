@@ -850,7 +850,7 @@ One time binding can leverage great performance results. In simple form a one ti
 
 ```html
   <p id="one-time-binding-repeat-example" ng-repeat="name in ::names">One time binding: {{name}}</p>
-  <p id="normal-binding-repeat-example" ng-repeat="name in ::names">Normal binding: {{name}}</p>
+  <p id="normal-binding-repeat-example" ng-repeat="name in names">Normal binding: {{name}}</p>
 ```
 
 **[Back to top](#table-of-contents)**
