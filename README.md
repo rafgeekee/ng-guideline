@@ -841,7 +841,8 @@ Before using a library please consult others to get there opinions and get it si
 ## One Time Binding
 ###### [Style [S011](#style-S011)]
 
-One time binding can leverage great performance results. In simple form a one time bind de-registers the $watch once it is stable (after the first digest-cycle). This technique is great to reduce complexity in an applications watch and digest cycles to improve an applications responsiveness. For more information see: https://docs.angularjs.org/guide/expression
+
+One time binding can leverage great performance results. Simply one time binding de-registers the associated $watch once the bind is stable, after the first digest-cycle. This technique is great to reduce complexity in an applications watch and digest cycle to improve responsiveness. For more information see: https://docs.angularjs.org/guide/expression
 
 ```html
   <p id="one-time-binding-example">One time binding: {{::name}}</p>
